@@ -16,14 +16,15 @@
 ## 树
 + 二叉树    binaryTree
 + 二叉搜索树 binarySearchTree
-+ 平衡二叉树 avlTreee
++ 平衡二叉树 avlTree
 
 ## 堆
-+ 最大堆、最小堆(优先级队列) minHeap、maxHeap、priorityQueue
++ 最大堆、最小堆(优先级队列) 
++ minHeap、maxHeap、priorityQueue
 
 ## 哈希表   不同哈希算法
 + 开放寻址法 斐波那契散列+扰动算法处理冲突  openHashMap
-+ 拉链法    链表长度大于8(红黑树dog)       linkHashMap
++ 拉链法    链表长度大于8(红黑树dog)      linkHashMap
 
 ## 图
 + 邻接矩阵
@@ -35,6 +36,7 @@
 ## 其他数据结构
 + 并查集  递归路径压缩 disJointSet
 + 字典树  Trie
++ 缓存   LruCache
 + 跳表  skipList
 + 布隆过滤器 bloomFilter
 

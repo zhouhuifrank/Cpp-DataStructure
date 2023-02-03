@@ -29,9 +29,9 @@ int main() {
     array.remove(8);
     array.traverse();
     cout << array.length() << endl;
-
+*/
+    /*
     cout << "============================" << endl;
-     */
     // test singleLinkedList.cpp
     cout << "Hello SingleLinkedList" << endl;
     singleLinkedList<int> array2;
@@ -54,10 +54,24 @@ int main() {
 
     array2.insert(2,99);
     array2.traverse();
-
+    */
     cout << "=============================" << endl;
     // test doubleLinkedList.cpp
     cout << "Hello doubleLinkedList" << endl;
+    doubleLinkedList<int> array3;
+    for (int i=0;i<5;i++) {
+        array3.insert(i,i+1);
+    }
+    cout << array3.length() << endl;
+    array3.traverse();
+
+    cout << array3.search(3) << endl;
+    cout << array3.visit(4) << endl;
+
+    array3.remove(3);
+    array3.traverse();
+    array3.insert(2,99);
+    array3.traverse();
 
     cout << "=============================" << endl;
     return 0;

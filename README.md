@@ -36,7 +36,8 @@
 ## 其他数据结构
 + 并查集  递归路径压缩 disJointSet
 + 字典树  Trie
-+ 缓存   LruCache
++ 缓存   LRUCache 最近最久未被使用
++ 缓存   LFUCache 最近最少使用
 + 跳表  skipList
 + 布隆过滤器 bloomFilter
 

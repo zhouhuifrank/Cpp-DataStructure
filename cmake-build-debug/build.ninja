@@ -101,6 +101,39 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # D:/TechLearn/C++/DataStructure/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target LinearList
+
+
+#############################################
+# Order-only phony target for LinearList
+
+build cmake_object_order_depends_target_LinearList: phony || LinearList/CMakeFiles/LinearList.dir
+
+build LinearList/CMakeFiles/LinearList.dir/main.cpp.obj: CXX_COMPILER__LinearList_Debug D$:/TechLearn/C++/DataStructure/LinearList/main.cpp || cmake_object_order_depends_target_LinearList
+  DEP_FILE = LinearList\CMakeFiles\LinearList.dir\main.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = LinearList\CMakeFiles\LinearList.dir
+  OBJECT_FILE_DIR = LinearList\CMakeFiles\LinearList.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LinearList
+
+
+#############################################
+# Link the executable LinearList\LinearList.exe
+
+build LinearList/LinearList.exe: CXX_EXECUTABLE_LINKER__LinearList_Debug LinearList/CMakeFiles/LinearList.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = LinearList\CMakeFiles\LinearList.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LinearList\LinearList.exe
+  TARGET_IMPLIB = LinearList\libLinearList.dll.a
+  TARGET_PDB = LinearList.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -353,6 +386,10 @@ build Sort/rebuild_cache: phony Sort/CMakeFiles/rebuild_cache.util
 
 build DataStructure: phony DataStructure.exe
 
+build LinearList: phony LinearList/LinearList.exe
+
+build LinearList.exe: phony LinearList/LinearList.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -389,7 +426,7 @@ build Heap/all: phony
 #############################################
 # Folder: D:/TechLearn/C++/DataStructure/cmake-build-debug/LinearList
 
-build LinearList/all: phony
+build LinearList/all: phony LinearList/LinearList.exe
 
 # =============================================================================
 

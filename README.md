@@ -1,11 +1,11 @@
 # CPP-DataStructure
-**数据结构CPP实现**
-
+**数据结构CPP实现**<br/>
+**使用template实现模板类**
 
 ## 线性表
-+ 顺序表   seqList
-+ 单链表   sLinkedList
-+ 双向链表 dLinkedList
++ 顺序表   seqList.h
++ 单链表   sLinkedList.h
++ 双向链表 dLinkedList.h
 
 ## 栈和队列
 + 顺序栈   seqStack

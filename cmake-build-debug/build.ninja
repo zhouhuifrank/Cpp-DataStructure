@@ -358,6 +358,54 @@ build Others/rebuild_cache: phony Others/CMakeFiles/rebuild_cache.util
 # D:/TechLearn/C++/DataStructure/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort
+
+
+#############################################
+# Order-only phony target for Sort
+
+build cmake_object_order_depends_target_Sort: phony || Sort/CMakeFiles/Sort.dir
+
+build Sort/CMakeFiles/Sort.dir/main.cpp.obj: CXX_COMPILER__Sort_Debug D$:/TechLearn/C++/DataStructure/Sort/main.cpp || cmake_object_order_depends_target_Sort
+  DEP_FILE = Sort\CMakeFiles\Sort.dir\main.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/TechLearn/C++/DataStructure/Sort/.
+  OBJECT_DIR = Sort\CMakeFiles\Sort.dir
+  OBJECT_FILE_DIR = Sort\CMakeFiles\Sort.dir
+
+build Sort/CMakeFiles/Sort.dir/mergeSort.cpp.obj: CXX_COMPILER__Sort_Debug D$:/TechLearn/C++/DataStructure/Sort/mergeSort.cpp || cmake_object_order_depends_target_Sort
+  DEP_FILE = Sort\CMakeFiles\Sort.dir\mergeSort.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/TechLearn/C++/DataStructure/Sort/.
+  OBJECT_DIR = Sort\CMakeFiles\Sort.dir
+  OBJECT_FILE_DIR = Sort\CMakeFiles\Sort.dir
+
+build Sort/CMakeFiles/Sort.dir/quickSort.cpp.obj: CXX_COMPILER__Sort_Debug D$:/TechLearn/C++/DataStructure/Sort/quickSort.cpp || cmake_object_order_depends_target_Sort
+  DEP_FILE = Sort\CMakeFiles\Sort.dir\quickSort.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/TechLearn/C++/DataStructure/Sort/.
+  OBJECT_DIR = Sort\CMakeFiles\Sort.dir
+  OBJECT_FILE_DIR = Sort\CMakeFiles\Sort.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort
+
+
+#############################################
+# Link the executable Sort\Sort.exe
+
+build Sort/Sort.exe: CXX_EXECUTABLE_LINKER__Sort_Debug Sort/CMakeFiles/Sort.dir/main.cpp.obj Sort/CMakeFiles/Sort.dir/mergeSort.cpp.obj Sort/CMakeFiles/Sort.dir/quickSort.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Sort\CMakeFiles\Sort.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort\Sort.exe
+  TARGET_IMPLIB = Sort\libSort.dll.a
+  TARGET_PDB = Sort.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -389,6 +437,10 @@ build DataStructure: phony DataStructure.exe
 build LinearList: phony LinearList/LinearList.exe
 
 build LinearList.exe: phony LinearList/LinearList.exe
+
+build Sort: phony Sort/Sort.exe
+
+build Sort.exe: phony Sort/Sort.exe
 
 # =============================================================================
 # Folder targets.
@@ -447,7 +499,7 @@ build Queue/all: phony
 #############################################
 # Folder: D:/TechLearn/C++/DataStructure/cmake-build-debug/Sort
 
-build Sort/all: phony
+build Sort/all: phony Sort/Sort.exe
 
 # =============================================================================
 

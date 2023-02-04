@@ -330,6 +330,40 @@ build Graph/rebuild_cache: phony Graph/CMakeFiles/rebuild_cache.util
 # D:/TechLearn/C++/DataStructure/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Others
+
+
+#############################################
+# Order-only phony target for Others
+
+build cmake_object_order_depends_target_Others: phony || Others/CMakeFiles/Others.dir
+
+build Others/CMakeFiles/Others.dir/disJointSet.cpp.obj: CXX_COMPILER__Others_Debug D$:/TechLearn/C++/DataStructure/Others/disJointSet.cpp || cmake_object_order_depends_target_Others
+  DEP_FILE = Others\CMakeFiles\Others.dir\disJointSet.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/TechLearn/C++/DataStructure/Others/.
+  OBJECT_DIR = Others\CMakeFiles\Others.dir
+  OBJECT_FILE_DIR = Others\CMakeFiles\Others.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Others
+
+
+#############################################
+# Link the executable Others\Others.exe
+
+build Others/Others.exe: CXX_EXECUTABLE_LINKER__Others_Debug Others/CMakeFiles/Others.dir/disJointSet.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Others\CMakeFiles\Others.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Others\Others.exe
+  TARGET_IMPLIB = Others\libOthers.dll.a
+  TARGET_PDB = Others.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -438,6 +472,10 @@ build LinearList: phony LinearList/LinearList.exe
 
 build LinearList.exe: phony LinearList/LinearList.exe
 
+build Others: phony Others/Others.exe
+
+build Others.exe: phony Others/Others.exe
+
 build Sort: phony Sort/Sort.exe
 
 build Sort.exe: phony Sort/Sort.exe
@@ -485,7 +523,7 @@ build LinearList/all: phony LinearList/LinearList.exe
 #############################################
 # Folder: D:/TechLearn/C++/DataStructure/cmake-build-debug/Others
 
-build Others/all: phony
+build Others/all: phony Others/Others.exe
 
 # =============================================================================
 

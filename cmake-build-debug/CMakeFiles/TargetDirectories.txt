@@ -4,6 +4,7 @@ D:/TechLearn/C++/DataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 D:/TechLearn/C++/DataStructure/cmake-build-debug/LinearList/CMakeFiles/LinearList.dir
 D:/TechLearn/C++/DataStructure/cmake-build-debug/LinearList/CMakeFiles/edit_cache.dir
 D:/TechLearn/C++/DataStructure/cmake-build-debug/LinearList/CMakeFiles/rebuild_cache.dir
+D:/TechLearn/C++/DataStructure/cmake-build-debug/Stack/CMakeFiles/Stack.dir
 D:/TechLearn/C++/DataStructure/cmake-build-debug/Stack/CMakeFiles/edit_cache.dir
 D:/TechLearn/C++/DataStructure/cmake-build-debug/Stack/CMakeFiles/rebuild_cache.dir
 D:/TechLearn/C++/DataStructure/cmake-build-debug/Queue/CMakeFiles/edit_cache.dir

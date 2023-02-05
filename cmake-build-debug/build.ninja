@@ -162,6 +162,39 @@ build LinearList/rebuild_cache: phony LinearList/CMakeFiles/rebuild_cache.util
 # D:/TechLearn/C++/DataStructure/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Stack
+
+
+#############################################
+# Order-only phony target for Stack
+
+build cmake_object_order_depends_target_Stack: phony || Stack/CMakeFiles/Stack.dir
+
+build Stack/CMakeFiles/Stack.dir/monotonousStack.cpp.obj: CXX_COMPILER__Stack_Debug D$:/TechLearn/C++/DataStructure/Stack/monotonousStack.cpp || cmake_object_order_depends_target_Stack
+  DEP_FILE = Stack\CMakeFiles\Stack.dir\monotonousStack.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = Stack\CMakeFiles\Stack.dir
+  OBJECT_FILE_DIR = Stack\CMakeFiles\Stack.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Stack
+
+
+#############################################
+# Link the executable Stack\Stack.exe
+
+build Stack/Stack.exe: CXX_EXECUTABLE_LINKER__Stack_Debug Stack/CMakeFiles/Stack.dir/monotonousStack.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Stack\CMakeFiles\Stack.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Stack\Stack.exe
+  TARGET_IMPLIB = Stack\libStack.dll.a
+  TARGET_PDB = Stack.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -480,6 +513,10 @@ build Sort: phony Sort/Sort.exe
 
 build Sort.exe: phony Sort/Sort.exe
 
+build Stack: phony Stack/Stack.exe
+
+build Stack.exe: phony Stack/Stack.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -544,7 +581,7 @@ build Sort/all: phony Sort/Sort.exe
 #############################################
 # Folder: D:/TechLearn/C++/DataStructure/cmake-build-debug/Stack
 
-build Stack/all: phony
+build Stack/all: phony Stack/Stack.exe
 
 # =============================================================================
 

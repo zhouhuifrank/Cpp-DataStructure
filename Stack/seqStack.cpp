@@ -79,6 +79,16 @@ T seqStack<T>::top() const {
 }
 
 int main() {
+    seqStack<int> stk;
+
+    stk.push(2);
+    std::cout << stk.top() << std::endl;
+    stk.push(3);
+    stk.push(7);
+    std::cout << stk.top() << std::endl;
+    stk.push(9);
+    std::cout << stk.pop() << std::endl;
+    std::cout << stk.top() << std::endl;
 
     return 0;
 }

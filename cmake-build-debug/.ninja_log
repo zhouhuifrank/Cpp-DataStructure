@@ -13,3 +13,11 @@
 285	363	6972032050027166	Others/Others.exe	94ea135533e31aae
 555	733	6972858392495644	Stack/Stack.exe	3b716ceb259af8ad
 2	555	6972858391028680	Stack/CMakeFiles/Stack.dir/monotonousStack.cpp.obj	1882743f2de9af3a
+0	1896	6972880822920052	Stack/CMakeFiles/Stack.dir/seqStack.cpp.obj	cadc06c9df03a48d
+9	1896	6972880822879974	Stack/CMakeFiles/Stack.dir/linkStack.cpp.obj	564cc4929f8f2fca
+2	275	6972881072129284	Stack/CMakeFiles/Stack.dir/linkStack.cpp.obj	564cc4929f8f2fca
+275	413	6972881073246391	Stack/Stack.exe	f5d15ba21e4c8a1a
+2	304	6972881308654590	Stack/CMakeFiles/Stack.dir/seqStack.cpp.obj	cadc06c9df03a48d
+304	419	6972881309589782	Stack/Stack.exe	f5d15ba21e4c8a1a
+1	267	6972881651146191	Stack/CMakeFiles/Stack.dir/seqStack.cpp.obj	cadc06c9df03a48d
+268	367	6972881652016925	Stack/Stack.exe	f5d15ba21e4c8a1a

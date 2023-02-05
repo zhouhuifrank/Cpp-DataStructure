@@ -171,15 +171,10 @@ build LinearList/rebuild_cache: phony LinearList/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_Stack: phony || Stack/CMakeFiles/Stack.dir
 
-build Stack/CMakeFiles/Stack.dir/seqStack.cpp.obj: CXX_COMPILER__Stack_Debug D$:/TechLearn/C++/DataStructure/Stack/seqStack.cpp || cmake_object_order_depends_target_Stack
-  DEP_FILE = Stack\CMakeFiles\Stack.dir\seqStack.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = Stack\CMakeFiles\Stack.dir
-  OBJECT_FILE_DIR = Stack\CMakeFiles\Stack.dir
-
 build Stack/CMakeFiles/Stack.dir/linkStack.cpp.obj: CXX_COMPILER__Stack_Debug D$:/TechLearn/C++/DataStructure/Stack/linkStack.cpp || cmake_object_order_depends_target_Stack
   DEP_FILE = Stack\CMakeFiles\Stack.dir\linkStack.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/TechLearn/C++/DataStructure/Stack/.
   OBJECT_DIR = Stack\CMakeFiles\Stack.dir
   OBJECT_FILE_DIR = Stack\CMakeFiles\Stack.dir
 
@@ -191,7 +186,7 @@ build Stack/CMakeFiles/Stack.dir/linkStack.cpp.obj: CXX_COMPILER__Stack_Debug D$
 #############################################
 # Link the executable Stack\Stack.exe
 
-build Stack/Stack.exe: CXX_EXECUTABLE_LINKER__Stack_Debug Stack/CMakeFiles/Stack.dir/seqStack.cpp.obj Stack/CMakeFiles/Stack.dir/linkStack.cpp.obj
+build Stack/Stack.exe: CXX_EXECUTABLE_LINKER__Stack_Debug Stack/CMakeFiles/Stack.dir/linkStack.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Stack\CMakeFiles\Stack.dir

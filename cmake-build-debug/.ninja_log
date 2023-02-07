@@ -1,12 +1,12 @@
 # ninja log v5
-0	295	6969734209803566	CMakeFiles/DataStructure.dir/main.cpp.obj	6f51c06f292c2f32
+1	485	6974012337451318	CMakeFiles/DataStructure.dir/main.cpp.obj	6f51c06f292c2f32
 109	302	6972016995531880	Sort/Sort.exe	1f5cdf8a5a1e61ae
-296	433	6969734210832329	DataStructure.exe	ca031edd91b502b0
+485	573	6974012338250825	DataStructure.exe	ca031edd91b502b0
 2	329	6971420073673770	LinearList/CMakeFiles/LinearList.dir/main.cpp.obj	8861ebc43084d239
 329	440	6971420074575669	LinearList/LinearList.exe	42e68628583723bb
 2	280	6972015482870340	Sort/CMakeFiles/Sort.dir/main.cpp.obj	c5dd0be2b06366dc
 7	92	6971985685483524	Sort/CMakeFiles/Sort.dir/mergeSort.cpp.obj	584a45b30e005b83
-0	149	6972882968898298	build.ninja	631fa29059a58ef5
+0	149	6974905807594860	build.ninja	631fa29059a58ef5
 2	109	6972016994491524	Sort/CMakeFiles/Sort.dir/quickSort.cpp.obj	21c3afec3c996d1f
 0	312	6972786665267229	Stack/CMakeFiles/Stack.dir/main.cpp.obj	a84dd9a758640137
 2	285	6972032049335143	Others/CMakeFiles/Others.dir/disJointSet.cpp.obj	9296e0b34473fbea

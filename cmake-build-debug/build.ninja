@@ -373,8 +373,15 @@ build Graph/rebuild_cache: phony Graph/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_Others: phony || Others/CMakeFiles/Others.dir
 
-build Others/CMakeFiles/Others.dir/disJointSet.cpp.obj: CXX_COMPILER__Others_Debug D$:/TechLearn/C++/DataStructure/Others/disJointSet.cpp || cmake_object_order_depends_target_Others
-  DEP_FILE = Others\CMakeFiles\Others.dir\disJointSet.cpp.obj.d
+build Others/CMakeFiles/Others.dir/main.cpp.obj: CXX_COMPILER__Others_Debug D$:/TechLearn/C++/DataStructure/Others/main.cpp || cmake_object_order_depends_target_Others
+  DEP_FILE = Others\CMakeFiles\Others.dir\main.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -ID:/TechLearn/C++/DataStructure/Others/.
+  OBJECT_DIR = Others\CMakeFiles\Others.dir
+  OBJECT_FILE_DIR = Others\CMakeFiles\Others.dir
+
+build Others/CMakeFiles/Others.dir/LRUCache.cpp.obj: CXX_COMPILER__Others_Debug D$:/TechLearn/C++/DataStructure/Others/LRUCache.cpp || cmake_object_order_depends_target_Others
+  DEP_FILE = Others\CMakeFiles\Others.dir\LRUCache.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -ID:/TechLearn/C++/DataStructure/Others/.
   OBJECT_DIR = Others\CMakeFiles\Others.dir
@@ -388,7 +395,7 @@ build Others/CMakeFiles/Others.dir/disJointSet.cpp.obj: CXX_COMPILER__Others_Deb
 #############################################
 # Link the executable Others\Others.exe
 
-build Others/Others.exe: CXX_EXECUTABLE_LINKER__Others_Debug Others/CMakeFiles/Others.dir/disJointSet.cpp.obj
+build Others/Others.exe: CXX_EXECUTABLE_LINKER__Others_Debug Others/CMakeFiles/Others.dir/main.cpp.obj Others/CMakeFiles/Others.dir/LRUCache.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Others\CMakeFiles\Others.dir
